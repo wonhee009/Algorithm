@@ -23,6 +23,12 @@ public class TidiTwo {
                 {2, 3}
         };
         System.out.println(solution(5, test2));
+
+        int[][] test3 = {
+                {1, 2},
+                {3, 4}
+        };
+        System.out.println(solution(6, test3));
     }
 
     static int[] parent;
