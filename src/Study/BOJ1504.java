@@ -19,6 +19,7 @@ public class BOJ1504 {
     static ArrayList<Index>[] road;
     static int firstTarget, secondTarget;
     static int[] startZero, startFirst, startSecond;
+    static int inf = Integer.MAX_VALUE;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -47,18 +48,22 @@ public class BOJ1504 {
         startFirst = new int[N];
         startSecond = new int[N];
 
-        Arrays.fill(startZero, Integer.MAX_VALUE);
-        Arrays.fill(startFirst, Integer.MAX_VALUE);
-        Arrays.fill(startSecond, Integer.MAX_VALUE);
+        Arrays.fill(startZero, inf);
+        Arrays.fill(startFirst, inf);
+        Arrays.fill(startSecond, inf);
 
+        fillZero();
         fillFirst();
         fillSecond();
 
-        int answer = startZero[firstTarget] + startFirst[secondTarget] + startSecond[N - 1];
-        answer = Math.min(answer, startZero[secondTarget] + startSecond[firstTarget] + startFirst[N - 1]);
-        if(answer >= Integer.MAX_VALUE){
-            answer = -1;
+        int answer = -1;
+        if(startZero[firstTarget] != inf && startFirst[secondTarget] != inf && startSecond[N - 1] != inf) {
+            answer = startZero[firstTarget] + startFirst[secondTarget] + startSecond[N - 1];
         }
+        if(startZero[secondTarget] != inf && startSecond[firstTarget] != inf && startFirst[N - 1] != inf) {
+            answer = Math.min(answer, startZero[secondTarget] + startSecond[firstTarget] + startFirst[N - 1]);
+        }
+
         System.out.println(answer);
     }
 
@@ -79,7 +84,7 @@ public class BOJ1504 {
             checked[temp.des] = true;
 
             for(Index r : road[temp.des]) {
-                if(temp.cost + r.cost <= startZero[r.des]) {
+                if(temp.cost + r.cost < startZero[r.des]) {
                     startZero[r.des] = temp.cost + r.cost;
                     q.add(new Index(r.des, temp.cost + r.cost));
                 }
@@ -104,7 +109,7 @@ public class BOJ1504 {
             checked[temp.des] = true;
 
             for(Index r : road[temp.des]) {
-                if(temp.cost + r.cost <= startFirst[r.des]) {
+                if(temp.cost + r.cost < startFirst[r.des]) {
                     startFirst[r.des] = temp.cost + r.cost;
                     q.add(new Index(r.des, temp.cost + r.cost));
                 }
@@ -129,7 +134,7 @@ public class BOJ1504 {
             checked[temp.des] = true;
 
             for(Index r : road[temp.des]) {
-                if(temp.cost + r.cost <= startSecond[r.des]) {
+                if(temp.cost + r.cost < startSecond[r.des]) {
                     startSecond[r.des] = temp.cost + r.cost;
                     q.add(new Index(r.des, temp.cost + r.cost));
                 }
