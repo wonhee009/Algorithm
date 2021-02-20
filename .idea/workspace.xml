@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6dca4b9-8839-4779-b0bf-8941f871a24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Study/BOJ14500.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Study/BOJ3085.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Study/BOJ1043.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Study/BOJ1043.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.BOJ1043">
+  <component name="RunManager" selected="Application.BOJ3085">
     <configuration name="BOJ1043" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Study.BOJ1043" />
       <module name="Algorithm" />
@@ -67,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ11967" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Study.BOJ11967" />
+    <configuration name="BOJ14503" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Study.BOJ14503" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BOJ2636" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Study.BOJ2636" />
+    <configuration name="BOJ3085" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Study.BOJ3085" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -121,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BOJ3085" />
+        <item itemvalue="Application.BOJ14503" />
         <item itemvalue="Application.BOJ1043" />
         <item itemvalue="Application.BOJ8980" />
         <item itemvalue="Application.BOJ8972" />
-        <item itemvalue="Application.BOJ11967" />
-        <item itemvalue="Application.BOJ2636" />
       </list>
     </recent_temporary>
   </component>
