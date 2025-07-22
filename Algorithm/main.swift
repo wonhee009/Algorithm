@@ -7,8 +7,9 @@
 
 import Foundation
 
-let twoSum = TwoSum()
-print(twoSum.twoSum([2,7,11,15], 9))
-print(twoSum.twoSum([3,2,4], 6))
-print(twoSum.twoSum([3,3], 6))
+let palindromeNumber = PalindromeNumber()
+print(palindromeNumber.isPalindrome(121))
+print(palindromeNumber.isPalindrome(-121))
+print(palindromeNumber.isPalindrome(10))
+print(palindromeNumber.isPalindrome(11))
 
