@@ -7,9 +7,8 @@
 
 import Foundation
 
-let palindromeNumber = PalindromeNumber()
-print(palindromeNumber.isPalindrome(121))
-print(palindromeNumber.isPalindrome(-121))
-print(palindromeNumber.isPalindrome(10))
-print(palindromeNumber.isPalindrome(11))
+let romanToInteger = RomanToInteger()
+//print(romanToInteger.romanToInt("III"))
+//print(romanToInteger.romanToInt("LVIII"))
+print(romanToInteger.romanToInt("MCMXCIV"))
 
