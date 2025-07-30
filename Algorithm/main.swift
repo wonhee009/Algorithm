@@ -7,8 +7,7 @@
 
 import Foundation
 
-let romanToInteger = RomanToInteger()
-//print(romanToInteger.romanToInt("III"))
-//print(romanToInteger.romanToInt("LVIII"))
-print(romanToInteger.romanToInt("MCMXCIV"))
+let longestCommonPrefix = LongestCommonPrefix()
+print(longestCommonPrefix.longestCommonPrefix(["flower","flow","flight"]))
+print(longestCommonPrefix.longestCommonPrefix(["dog","racecar","car"]))
 
