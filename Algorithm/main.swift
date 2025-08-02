@@ -7,7 +7,10 @@
 
 import Foundation
 
-let longestCommonPrefix = LongestCommonPrefix()
-print(longestCommonPrefix.longestCommonPrefix(["flower","flow","flight"]))
-print(longestCommonPrefix.longestCommonPrefix(["dog","racecar","car"]))
+let validParentheses = ValidParentheses()
+print(validParentheses.isValid("()"))
+print(validParentheses.isValid("()[]{}"))
+print(validParentheses.isValid("(]"))
+print(validParentheses.isValid("([])"))
+print(validParentheses.isValid("([)]"))
 
