@@ -7,10 +7,3 @@
 
 import Foundation
 
-let validParentheses = ValidParentheses()
-print(validParentheses.isValid("()"))
-print(validParentheses.isValid("()[]{}"))
-print(validParentheses.isValid("(]"))
-print(validParentheses.isValid("([])"))
-print(validParentheses.isValid("([)]"))
-
