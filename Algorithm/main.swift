@@ -7,8 +7,10 @@
 
 import Foundation
 
-let removeDuplicatesFromSortedArray = RemoveDuplicatesFromSortedArray()
-var obj1 = [1, 1, 2]
-var obj2 = [0,0,1,1,1,2,2,3,3,4]
-print(removeDuplicatesFromSortedArray.removeDuplicates(&obj1))
-print(removeDuplicatesFromSortedArray.removeDuplicates(&obj2))
+let removeElement = RemoveElement()
+var obj1 = [3,2,2,3]
+var obj2 = [0,1,2,2,3,0,4,2]
+print(removeElement.removeElement(&obj1, 3))
+print(obj1)
+print(removeElement.removeElement(&obj2, 2))
+print(obj2)
