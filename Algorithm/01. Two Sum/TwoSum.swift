@@ -27,7 +27,7 @@ class TwoSum {
         return []
          */
         
-        // tiem: 1, space: 1
+        // time: 1, space: 1
         /*
         var numWithIndex: [Int: Int] = [:]
         for (index, num) in nums.enumerated() {
@@ -39,6 +39,13 @@ class TwoSum {
         }
         return []
          */
+        
+// We use a dictionary so we only loop through the array once.
+// For each number, we compute 'target number - number'
+// If that complement is already in a dictionary, we return its index and the current index.
+// Otherwise, we store the current number with index.
+// This runs in O(n) time and uses O(n) extra space.
+        
         return []
     }
 }
