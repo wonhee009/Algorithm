@@ -7,6 +7,6 @@
 
 import Foundation
 
-print(FindTheIndexOfTheFirstOccurrenceInAString().strStr("sadbutsad", "sad"))
-print(FindTheIndexOfTheFirstOccurrenceInAString().strStr("leetcode", "leeto"))
-print(FindTheIndexOfTheFirstOccurrenceInAString().strStr("hello", "ll"))
+print(BestTimeToBuyAndSellStock().maxProfit([7,1,5,3,6,4]))
+print(BestTimeToBuyAndSellStock().maxProfit([7,6,4,3,1]))
+print(BestTimeToBuyAndSellStock().maxProfit([1,2]))
