@@ -7,6 +7,6 @@
 
 import Foundation
 
-print(BestTimeToBuyAndSellStock().maxProfit([7,1,5,3,6,4]))
-print(BestTimeToBuyAndSellStock().maxProfit([7,6,4,3,1]))
-print(BestTimeToBuyAndSellStock().maxProfit([1,2]))
+print(GroupAnagrams().groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
+print(GroupAnagrams().groupAnagrams([""]))
+print(GroupAnagrams().groupAnagrams(["a"]))

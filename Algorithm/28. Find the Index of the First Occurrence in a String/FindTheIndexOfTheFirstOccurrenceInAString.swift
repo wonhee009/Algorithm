@@ -20,7 +20,7 @@ class FindTheIndexOfTheFirstOccurrenceInAString {
 //        return -1
         // O(n * n)
         if let range = haystack.firstRange(of: needle) {
-                    return haystack.distance(from: haystack.startIndex, to: range.lowerBound)
+            return haystack.distance(from: haystack.startIndex, to: range.lowerBound)
         } else {
             return -1
         }
