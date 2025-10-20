@@ -7,6 +7,8 @@
 
 import Foundation
 
-print(GroupAnagrams().groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
-print(GroupAnagrams().groupAnagrams([""]))
-print(GroupAnagrams().groupAnagrams(["a"]))
+print(IsomorphicStrings().isIsomorphic("egg", "add"))
+print(IsomorphicStrings().isIsomorphic("foo", "bar"))
+print(IsomorphicStrings().isIsomorphic("paper", "title"))
+print(IsomorphicStrings().isIsomorphic("abcdefghijklmnopqrstuvwxyzva", "abcdefghijklmnopqrstuvwxyzck"))
+print(IsomorphicStrings().isIsomorphic("badc", "baba"))
