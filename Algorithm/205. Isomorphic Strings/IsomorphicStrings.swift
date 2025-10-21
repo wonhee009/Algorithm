@@ -8,9 +8,11 @@
 
 class IsomorphicStrings {
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
+        // time: O(n), space: O(n)
         if s.count != t.count { return false }
         
         var characterMap: [Character: Character] = [:]
+        var valueSet: Set<Character> = []
         let sArray = Array(s)
         var tArray = Array(t)
         
@@ -22,11 +24,15 @@ class IsomorphicStrings {
                     tArray[index] = sArray[index]
                 }
             } else {
-                characterMap[sArray[index]] = tArray[index]
-                tArray[index] = sArray[index]
+                if valueSet.contains(tArray[index]) {
+                    return false
+                } else {
+                    valueSet.insert(tArray[index])
+                    characterMap[sArray[index]] = tArray[index]
+                    tArray[index] = sArray[index]
+                }
             }
         }
-        print("\(sArray) and \(tArray)")
         return String(sArray) == String(tArray)
     }
 }

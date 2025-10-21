@@ -7,8 +7,8 @@
 
 import Foundation
 
-print(IsomorphicStrings().isIsomorphic("egg", "add"))
-print(IsomorphicStrings().isIsomorphic("foo", "bar"))
+//print(IsomorphicStrings().isIsomorphic("egg", "add"))
+//print(IsomorphicStrings().isIsomorphic("foo", "bar"))
 print(IsomorphicStrings().isIsomorphic("paper", "title"))
-print(IsomorphicStrings().isIsomorphic("abcdefghijklmnopqrstuvwxyzva", "abcdefghijklmnopqrstuvwxyzck"))
-print(IsomorphicStrings().isIsomorphic("badc", "baba"))
+//print(IsomorphicStrings().isIsomorphic("abcdefghijklmnopqrstuvwxyzva", "abcdefghijklmnopqrstuvwxyzck"))
+//print(IsomorphicStrings().isIsomorphic("badc", "baba"))
