@@ -7,8 +7,7 @@
 
 import Foundation
 
-//print(IsomorphicStrings().isIsomorphic("egg", "add"))
-//print(IsomorphicStrings().isIsomorphic("foo", "bar"))
-print(IsomorphicStrings().isIsomorphic("paper", "title"))
-//print(IsomorphicStrings().isIsomorphic("abcdefghijklmnopqrstuvwxyzva", "abcdefghijklmnopqrstuvwxyzck"))
-//print(IsomorphicStrings().isIsomorphic("badc", "baba"))
+//print(FindAllAnagramsInAString().findAnagrams("cbaebabacd", "abc"))
+//print(FindAllAnagramsInAString().findAnagrams("abab", "ab"))
+//print(FindAllAnagramsInAString().findAnagrams("baa", "aa"))
+print(FindAllAnagramsInAString().findAnagrams("abaacbabc", "abc"))
