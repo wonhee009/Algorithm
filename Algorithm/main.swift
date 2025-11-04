@@ -7,7 +7,6 @@
 
 import Foundation
 
-//print(FindAllAnagramsInAString().findAnagrams("cbaebabacd", "abc"))
-//print(FindAllAnagramsInAString().findAnagrams("abab", "ab"))
-//print(FindAllAnagramsInAString().findAnagrams("baa", "aa"))
-print(FindAllAnagramsInAString().findAnagrams("abaacbabc", "abc"))
+print(MaximumSubarray().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+print(MaximumSubarray().maxSubArray([1]))
+print(MaximumSubarray().maxSubArray([5,4,-1,7,8]))
