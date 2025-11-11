@@ -7,6 +7,5 @@
 
 import Foundation
 
-print(MaximumSubarray().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
-print(MaximumSubarray().maxSubArray([1]))
-print(MaximumSubarray().maxSubArray([5,4,-1,7,8]))
+print(PermutationInString().checkInclusion("ab", "eidbaooo"))
+print(PermutationInString().checkInclusion("ab", "eidboaoo"))
