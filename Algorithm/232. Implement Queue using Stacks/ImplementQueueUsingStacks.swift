@@ -7,38 +7,34 @@
 // https://leetcode.com/problems/implement-queue-using-stacks/description/
 
 class ImplementQueueUsingStacks {
-    var stack: [Int]
-    var reversedStack: [Int]
-    init() {
-        stack = []
-        reversedStack = []
-    }
-    
+    private var input: [Int] = []
+    private var output: [Int] = []
+
     func push(_ x: Int) {
-        stack.append(x)
+        input.append(x)
     }
-    
+
     func pop() -> Int {
-        if reversedStack.isEmpty {
-            moveToReversedStack()
+        if output.isEmpty {
+            shift()
         }
-        return reversedStack.removeFirst()
+        return output.removeLast()
     }
-    
+
     func peek() -> Int {
-        if reversedStack.isEmpty {
-            moveToReversedStack()
+        if output.isEmpty {
+            shift()
         }
-        return reversedStack.first!
+        return output.last!
     }
-    
-    private func moveToReversedStack() {
-        while !stack.isEmpty {
-            reversedStack.append(stack.removeLast())
-        }
-    }
-    
+
     func empty() -> Bool {
-        return stack.isEmpty && reversedStack.isEmpty
+        return input.isEmpty && output.isEmpty
+    }
+
+    private func shift() {
+        while let value = input.popLast() {
+            output.append(value)
+        }
     }
 }
