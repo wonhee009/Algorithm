@@ -9,7 +9,7 @@
 
 class TwoSum {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var numWithIndex: [Int: Int] [:]
+        var numWithIndex: [Int: Int] = [:]
         for (index, num) in nums.enumerated() {
             if let otherIndex = numWithIndex[num] {
                 return [otherIndex, index]
